@@ -222,19 +222,20 @@ header{
 /* Servicios 2 */
 .background-black-absolute{
     background-color: #262626;
-    position: absolute;
+    position: relative;
     width: 40%;
-    height: 100%;
+    height: 610px;
     left: 0;
 }
 
 .servicios-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    position: relative;
+    position: absolute;
     gap: 4rem;
-    top: 75px;
+    top: 150px;
     justify-items: center;
+    width: 100%;
 }
 
 .servicio-img{
