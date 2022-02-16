@@ -34,9 +34,8 @@ img{
     text-decoration: none;
 }
 
-h2 span{
-    border-bottom: 3px solid  #595959;
-    font-weight: 700;
+a{
+    text-decoration: none;
 }
 
 /* Hero / header */
@@ -60,7 +59,7 @@ header{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.menu-lista{
+.menu__lista{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -74,7 +73,7 @@ header{
     gap: 4rem;
 }
 
-.menu-item a{
+.menu__link{
     display: block;
     text-decoration: none;
     font-size: 1.3rem;
@@ -86,7 +85,7 @@ header{
     position: relative;
 }
 
-.menu-item a::after{
+.menu__link::after{
     content: '';
     display: block;
     margin-top: 10px;
@@ -96,7 +95,7 @@ header{
     transition: all 0.3s;
 }
 
-.menu-item a:hover::after{
+.menu__link:hover::after{
     width: 100%;
 }
 
@@ -148,7 +147,7 @@ header{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.contenedor-texto-header{
+.texto-header{
     display: flex;
     flex-direction: column;
     background-color: #fffffff7;
@@ -161,19 +160,19 @@ header{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.contenedor-texto-header h1{
+.texto-header__titulo{
     font-size: 4.2rem;
     color: #484848;
     font-weight: 300;
     text-align: center;
 }
 
-.contenedor-texto-header span{
+.bold-border{
     font-weight: 700;
     border-bottom: 2px solid #484848;
 }
 
-.contenedor-texto-header p{
+.texto-header__parrafo{
     font-size: 1.2rem;
     font-weight: 500;
     color: #222;
@@ -182,7 +181,7 @@ header{
     text-align: center;
 }
 
-.contenedor-texto-header .btn-header{
+.btn--header{
     padding: 15px 40px;
     font-weight: 600;
     border: 1px solid #4a4a4a;
@@ -191,48 +190,49 @@ header{
     color: #262626;
 }
 
-.contenedor-texto-header .btn-header:hover{
+.btn--header:hover{
     background-color: #262626;
     color: #fff;
 }
 
 /* sobre nosotros */
-.nosotros{
-    background-color: #F2F2F2;
+.sobre__nosotros{
     padding: 5rem 0.5rem;
 }
 
-.contenedor-sobre-nosotros{
+.nosotros{
     display: grid;
     grid-template-columns: repeat(2,minmax(min-content,max-content));
     gap: 5rem;
 }
 
-.texto-sobre-nosotros h2{
-    font-size: 3rem;
-    font-weight: 400;
-    color: #262626;
-}
-
-.texto-sobre-nosotros p{
-    font-weight: 400;
-    font-size: 1.20rem;
-    line-height: 2rem;
-    color: #262626;
-}
-
-.img-sobre-nosotros{
+.nosotros__thumbnail{
     position: relative;
     background-color: #686868;
+    max-height: 450px;
 }
 
-.img-sobre-nosotros img{
+.nosotros__img{
     position: relative;
-    left: 3%;
-    top: 6%;
-    height: 25rem;
+    left: 15px;
+    top: 25px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.nosotros__titulo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #262626;
+}
+
+.nosotros__parrafo{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2rem;
+    color: #262626;
 }
 
 /* Nuestros Servicios */
@@ -243,22 +243,22 @@ header{
     position: relative;
 }
 
-.nuestros-servicios h2{
-    font-size: 3rem;
+.h2-center{
+    font-size: 2.5rem;
     font-weight: 400;
     color: #262626;
     text-align: center;
     margin-bottom: 4.5rem;
 }
 
-.servicios-flex{
+.servicios{
     display: flex;
     gap: 3rem;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.servicio-contenedor{
+.servicios__contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,21 +268,20 @@ header{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.servicio-contenedor img{
+.servicios__img{
     width: 100%;
-    height: 250px;
     object-fit: cover;
 }
 
-.servicios-texto h3{
+.servicios__titulo{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #262626;
     margin-bottom: 1rem;
 }
 
-.servicios-texto p{
+.servicios__parrafo{
     text-align: center;
     line-height: 1.5rem;
     font-weight: 400;
@@ -291,7 +290,7 @@ header{
     padding-right: 3rem;
 }
 
-.servicio-contenedor a{
+.btn--servicios{
     font-size: 18px;
     position: relative;
     top: 4%;
@@ -299,7 +298,7 @@ header{
 }
 
 /* Servicios 2 */
-.background-black-absolute{
+.bg-absolute{
     background-color: #262626;
     position: relative;
     width: 40%;
@@ -317,31 +316,30 @@ header{
     width: 100%;
 }
 
-.servicio-img{
+.servicios-grid__thumbnail{
     height: 450px;
     position: relative;
     left: 5%;
 }
 
-.servicio-img img{
+.servicios-grid__img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.tarjeta-background{
+.bg-tarjeta{
     height: 400px;
     width: 300px;
     background-color: #8c8c8c;
 }
 
-.servicio-tarjeta{
+.tarjeta{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 400px;
-    width: 300px;
+    width: 100%;
     background-color: #fff;
     position: relative;
     top: 5%;
@@ -350,75 +348,179 @@ header{
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.servicio-tarjeta h3{
+.tarjeta__titulo{
     font-size: 1.7rem;
     color: #262626;
 }
 
-.servicio-tarjeta p{
+.tarjeta__parrafo{
     font-weight: 500;
     line-height: 1.6rem;
     color: #262626;
 }
 
+.btn--tarjeta{
+    font-size: 18px;
+    font-weight: 500
+}
+
 /* Galeria */
+.section-galeria{
+    padding: 2rem 0.5rem;
+}
+
 .galeria{
-    padding: 5rem 0.5rem;
-}
-
-.galeria h2{
-    font-size: 2.7rem;
-    text-align: center;
-    font-weight: 400;
-    color: #262626;
-    margin-bottom: 4.5rem;
-}
-
-.contenedor-galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 300px;
     gap: 0.5rem;
 }
 
-.galeria-img img{
+.galeria__img{
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-.galeria-img:nth-child(1){
+.galeria__item:nth-child(1){
     grid-column: span 2;
 }
 
-.galeria-img:nth-child(2){
+.galeria__item:nth-child(2){
     grid-column: span 2;
 }
 
-.galeria-img:nth-child(3){
+.galeria__item:nth-child(3){
     grid-row: 1/3;
     grid-column: 3/5;
 }
 
-.galeria-img:nth-child(4){
+.galeria__item:nth-child(4){
     grid-row: span 2;
     grid-column: span 2;
 }
 
-.galeria-img:nth-child(5){
+.galeria__item:nth-child(5){
     grid-column: span 2;
 }
 
-.galeria-img:nth-child(8){
+.galeria__item:nth-child(8){
     grid-column: 3/5;
     grid-row: span 2;
 }
 
-.galeria-img:nth-child(9){
+.galeria__item:nth-child(9){
     grid-column: 1/3;
 }
 
-.galeria-img:nth-child(10){
+.galeria__item:nth-child(10){
     grid-column: 1/3;
     grid-row: 5/6;
+}
+
+/* Footer Contacto */
+footer{
+    padding: 5rem 1rem;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+
+.contacto__contenedor{
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.contacto__titulo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: rgb(64 64 64);
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.form__nombre{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #8C8C8C;
+    color: #262626;
+    font-size: 16px;
+}
+
+.form__correo{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #8C8C8C;
+    color: #262626;
+    font-size: 16px;
+}
+
+.form__msj{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #8C8C8C;
+    color: #262626;
+    font-size: 16px;
+    resize: none;
+}
+
+.btn--form{
+    text-align: center;
+    margin-top: 1.3rem;
+}
+
+/* Contacto info */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    background-color: #383838;
+    padding: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.info__redes{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.info__twitter,
+.info__facebook,
+.info__instagram{
+    color: rgb(241 241 241);
+}
+
+.info__contacto{
+    text-align: center;
+}
+
+.info__texto{
+    text-align: center;
+}
+
+.info__parrafo,
+.info__web,
+.info__derechos{
+    margin: 2rem 0;
 }

@@ -17,44 +17,44 @@
             <i class="fas fa-times close"></i>
         </button>
         <nav class="menu">
-            <ul class="menu-lista">
-                <li class="menu-item">
-                    <a href="#">Inicio</a>
+            <ul class="menu__lista"><!-- menu-lista -->
+                <li class="menu__item"><!-- menu-item -->
+                    <a href="#" class="menu__link">Inicio</a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">Nosotros</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Nosotros</a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">Servicios</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Servicios</a>
                 </li>
-                <li class="menu-item">
-                    <a href="#">Galería</a>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Galería</a>
                 </li>
             </ul>
         </nav>
 
         <div class="bg-texto-header">
-            <div class="contenedor-texto-header">
-                <h1>Moderna <span>Muebles</span></h1>
-                <p>
+            <div class="texto-header">
+                <h1 class="texto-header__titulo">Moderna <span class="bold-border">Muebles</span></h1>
+                <p class="texto-header__parrafo">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem placeat enim? Facere amet eligendi autem aspernatur mollitia laboriosam nesciunt magnam hic.
                 </p>
 
-                <a href="#" class="btn btn-header">Productos</a>
+                <a href="#" class="btn btn--header">Productos</a>
             </div>
         </div>
     </header>
     <!-- Sobre nosotros -->
-    <section class="nosotros">
-        <div class="contenedor-sobre-nosotros contenedor">
-            <div class="img-sobre-nosotros">
-                <img src="./img/sobre-nosotros.jpg" alt="-imagen nosotros">
+    <section class="sobre__nosotros">
+        <div class="nosotros contenedor">
+            <div class="nosotros__thumbnail">
+                <img src="./img/sobre-nosotros.jpg" alt="-imagen nosotros" class="nosotros__img">
             </div>
 
-            <div class="texto-sobre-nosotros">
-                <h2>Sobre <span>nosotros</span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ea voluptatum dignissimos unde cupiditate, inventore voluptatem.</p>
-                <p>
+            <div class="nosotros__texto">
+                <h2 class="nosotros__titulo">Sobre <span class="bold-border">nosotros</span></h2>
+                <p class="nosotros__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ea voluptatum dignissimos unde cupiditate, inventore voluptatem.psum dolor sit amet consectetur adipisicing elit. Unde sequi esse dolorum tenetur cumque sapiente fugiat explicabo reiciendis doloremque molestiae. Delectus consequuntur maiores.</p>
+                <p class="nosotros__parrafo">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sequi esse dolorum tenetur cumque sapiente fugiat explicabo reiciendis doloremque molestiae. Delectus consequuntur maiores.
                 </p>
             </div>
@@ -62,107 +62,165 @@
     </section>
     <!-- Nuestros servicios tarjetas -->
     <section class="nuestros-servicios">
-        <h2>Nuestros <span>servicios</span></h2>
+        <h2 class="h2-center">Nuestros <span class="bold-border">servicios</span></h2>
 
-        <div class="servicios-flex contenedor">
+        <div class="servicios contenedor">
 
-            <div class="servicio-contenedor">
-                <img src="./img/servicios-1.jpg" alt="Servicio 1">
+            <div class="servicios__contenedor">
+                <img src="./img/servicios-1.jpg" alt="Servicio 1" class="servicios__img">
 
-                <div class="servicios-texto">
-                    <h3>Interior</h3>
-                    <p>
+                <div class="servicios__texto">
+                    <h3 class="servicios__titulo">Interior</h3>
+                    <p class="servicios__parrafo">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolore nulla commodi iure, sit temporibus amet.
                     </p>
                 </div>
 
-                <a href="#" class="btn">Lorem</a>
+                <a href="#" class="btn btn--servicios">Lorem</a>
             </div>
 
-            <div class="servicio-contenedor">
-                <img src="./img/servicios-2.jpg" alt="Servicio 1">
+            <div class="servicios__contenedor">
+                <img src="./img/servicios-2.jpg" alt="Servicio 1" class="servicios__img">
 
-                <div class="servicios-texto">
-                    <h3>Decoracion</h3>
-                    <p>
+                <div class="servicios__texto">
+                    <h3 class="servicios__titulo">Decoracion</h3>
+                    <p class="servicios__parrafo">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolore nulla commodi iure, sit temporibus amet.
                     </p>
                 </div>
                 
-                <a href="#" class="btn">Lorem</a>
+                <a href="#" class="btn btn--servicios">Lorem</a>
             </div>
 
-            <div class="servicio-contenedor">
-                <img src="./img/servicios-3.jpg" alt="Servicio 1">
+            <div class="servicios__contenedor">
+                <img src="./img/servicios-3.jpg" alt="Servicio 1" class="servicios__img">
 
-                <div class="servicios-texto">
-                    <h3>Organizacion</h3>
-                    <p>
+                <div class="servicios__texto">
+                    <h3 class="servicios__titulo">Organizacion</h3>
+                    <p class="servicios__parrafo">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolore nulla commodi iure, sit temporibus amet.
                     </p>
                 </div>
                 
-                <a href="#" class="btn">Lorem</a>
+                <a href="#" class="btn btn--servicios">Lorem</a>
             </div>
 
         </div>
     </section>
     <!-- Nuestros servicios tarjeta e imagen -->
     <section class="nuestros-servicios">
-        <div class="background-black-absolute"></div>
-        <div class="servicios-grid"><!-- Grid 2 columnas -->
+        <div class="bg-absolute"></div>
+        <div class="servicios-grid">
 
-            <div class="servicio-img"><!-- Contenedor imagen -->
-                <img src="./img/servicios-4.jpg" alt="">
+            <div class="servicios-grid__thumbnail"><!-- Contenedor imagen -->
+                <img src="./img/servicios-4.jpg" alt="" class="servicios-grid__img">
             </div>
 
-            <div class="tarjeta-background"><!-- background de tarjeta -->
-                <div class="servicio-tarjeta"><!-- contenedor de tarjeta y boton -->
-                        <h3>Nuestros Servicios</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ipsa eveniet quod tempora magni magnam nulla quis, in fuga. Ipsum velit ex nisi aut, obcaecati eaque possimus! Doloribus, rerum laboriosam.</p>
+            <div class="bg-tarjeta"><!-- background de tarjeta -->
+                <div class="tarjeta"><!-- contenedor de tarjeta y boton -->
+                        <h3 class="tarjeta__titulo">Nuestros Servicios</h3>
+                        <p class="tarjeta__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ipsa eveniet quod tempora magni magnam nulla quis, in fuga. Ipsum velit ex nisi aut, obcaecati eaque possimus! Doloribus, rerum laboriosam.</p>
 
-                        <a href="#" class="btn">Lorem</a>
+                        <a href="#" class="btn btn--tarjeta">Lorem</a>
                 </div>
             </div>
 
         </div>
     </section>
     <!-- Galeria -->
-    <section class="galeria">
-        <h2>Galería</h2>
-        <div class="contenedor-galeria contenedor">
-            <div class="galeria-img">
-                <img src="./img/galeria-1.jpg" alt="">
+    <section class="section-galeria">
+        <h2 class="h2-center">Galería</h2>
+        <div class="galeria contenedor">
+            <div class="galeria__item">
+                <img src="./img/galeria-1.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-2.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-2.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-3.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-3.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-4.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-4.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-5.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-5.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-6.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-6.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-7.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-7.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-8.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-8.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-9.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-9.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria-img">
-                <img src="./img/galeria-10.jpg" alt="">
+            <div class="galeria__item">
+                <img src="./img/galeria-10.jpg" alt="" class="galeria__img">
             </div>
         </div>
     </section>
+    <!-- Footer contacto -->
+    <footer>
+        <div class="contacto contenedor">
+            <div class="contacto__contenedor">
+                <h3 class="contacto__titulo h2-center">Contacto</h3>
+
+                <form action="#" class="form">
+
+                    <label for="#">Nombre</label>
+                    <input type="text" required class="form__nombre"
+                    placeholder="Ingrese nombre">
+
+                    <label for="#">Correo</label>
+                    <input type="email" required class="form__correo" placeholder="Ingrese correo">
+
+                    <label for="">Mensaje</label>
+                    <textarea name="msj" id="" cols="30" rows="2" required class="form__msj" placeholder="Su mensaje"></textarea>
+
+                    <a href="#" class="btn btn--form">Contactame</a>
+                </form>
+            </div>
+
+            <div class="info">
+
+                <div class="info__redes">
+                    <a href="#" class="info__twitter">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="info__facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="info__instagram">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+                <div class="info__contacto">
+                    <p><i class="fa-solid fa-location-dot"></i> Baker Street</p>
+                    <p><i class="fa-solid fa-phone"></i> 1134 1233-2345</p>
+                    <p><i class="fa-solid fa-envelope"></i> usuario.1995@hotmail.com</p>
+                </div>
+
+                <div class="info__texto">
+                    <p class="info__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet incidunt dolor veniam sequi iusto. Culpa tenetur omnis delectus facere debitis nemo quibusdam cupiditate ut, voluptate, quas porro quisquam accusamus illo.
+                    </p>
+
+                    <p class="info__web">
+                        www.moderna-muebles.com
+                    </p>
+                    
+                    <p class="info__derechos">
+                        Todos los derechos. @Desarrollador/Diseñador front-end Eugenio Josué Ferreira
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
 </body>
