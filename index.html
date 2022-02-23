@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica</title>
+    <title>E-commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <!-- menu -->
         <button class="menu-btn">
             <i class="fas fa-bars open"></i>
@@ -19,16 +19,19 @@
         <nav class="menu">
             <ul class="menu__lista"><!-- menu-lista -->
                 <li class="menu__item"><!-- menu-item -->
-                    <a href="#" class="menu__link">Inicio</a>
+                    <a href="#inicio" class="menu__link">Inicio</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Nosotros</a>
+                    <a href="#nosotros" class="menu__link">Nosotros</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Servicios</a>
+                    <a href="#servicios" class="menu__link">Servicios</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Galería</a>
+                    <a href="#galeria" class="menu__link">Galería</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contacto" class="menu__link">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -45,7 +48,7 @@
         </div>
     </header>
     <!-- Sobre nosotros -->
-    <section class="sobre__nosotros">
+    <section class="sobre__nosotros" id="nosotros">
         <div class="nosotros contenedor">
             <div class="nosotros__thumbnail">
                 <img src="./img/sobre-nosotros.jpg" alt="-imagen nosotros" class="nosotros__img">
@@ -61,7 +64,7 @@
         </div>
     </section>
     <!-- Nuestros servicios tarjetas -->
-    <section class="nuestros-servicios">
+    <section class="nuestros-servicios" id="servicios">
         <h2 class="h2-center">Nuestros <span class="bold-border">servicios</span></h2>
 
         <div class="servicios contenedor">
@@ -83,7 +86,7 @@
                 <img src="./img/servicios-2.jpg" alt="Servicio 1" class="servicios__img">
 
                 <div class="servicios__texto">
-                    <h3 class="servicios__titulo">Decoracion</h3>
+                    <h3 class="servicios__titulo">Decoración</h3>
                     <p class="servicios__parrafo">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolore nulla commodi iure, sit temporibus amet.
                     </p>
@@ -96,7 +99,7 @@
                 <img src="./img/servicios-3.jpg" alt="Servicio 1" class="servicios__img">
 
                 <div class="servicios__texto">
-                    <h3 class="servicios__titulo">Organizacion</h3>
+                    <h3 class="servicios__titulo">Organización</h3>
                     <p class="servicios__parrafo">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum dolore nulla commodi iure, sit temporibus amet.
                     </p>
@@ -128,7 +131,7 @@
         </div>
     </section>
     <!-- Galeria -->
-    <section class="section-galeria">
+    <section class="section-galeria" id="galeria">
         <h2 class="h2-center">Galería</h2>
         <div class="galeria contenedor">
             <div class="galeria__item">
@@ -164,7 +167,7 @@
         </div>
     </section>
     <!-- Footer contacto -->
-    <footer>
+    <footer id="contacto">
         <div class="contacto contenedor">
             <div class="contacto__contenedor">
                 <h3 class="contacto__titulo h2-center">Contacto</h3>
