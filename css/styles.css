@@ -232,7 +232,7 @@ header{
 .nosotros__parrafo{
     font-weight: 500;
     font-size: 18px;
-    line-height: 2rem;
+    line-height: 1.7rem;
     color: #262626;
 }
 
@@ -711,7 +711,11 @@ footer{
     .nosotros__parrafo,
     .servicios__parrafo,
     .tarjeta__parrafo{
-        font-size: 0.938rem;
+        font-size: 1rem;
+    }
+
+    .nosotros__parrafo{
+        line-height: 1.5rem;
     }
 
     .servicios__titulo{
